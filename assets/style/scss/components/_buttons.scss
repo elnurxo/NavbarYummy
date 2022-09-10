@@ -1,0 +1,11 @@
+.my-button{
+    background-color: #CE1212;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    transition: .2s;
+    &:hover{
+        background-color: #d64c4c;
+    }
+}

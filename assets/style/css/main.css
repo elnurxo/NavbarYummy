@@ -1,0 +1,111 @@
+header {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+header .logo h1 {
+  font-weight: bolder;
+}
+header .logo h1 span {
+  color: red;
+}
+header .nav-links {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+}
+header .nav-links-item {
+  position: relative;
+}
+header .nav-links-item .home {
+  color: black !important;
+}
+header .nav-links-item::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -7px;
+  background-color: darkred;
+  transition: 0.3s ease;
+}
+header .nav-links-item:hover:after {
+  width: 100%;
+}
+header .nav-links-item:hover a {
+  color: black !important;
+}
+header .nav-links .drop-down {
+  position: relative;
+}
+header .nav-links .drop-down ul {
+  transition: 0.3s;
+  position: absolute;
+  top: 50px;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+}
+header .nav-links .drop-down ul li {
+  margin-bottom: 7px;
+}
+header .nav-links .drop-down:hover ul {
+  top: 38px;
+  opacity: 1;
+}
+header .book-table {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+header .hamburger-btn {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-links-wrapper {
+    display: none !important;
+  }
+  .hamburger-btn {
+    display: block !important;
+    margin-left: 20px;
+    font-size: 25px;
+    width: 50px;
+    border: none;
+    background-color: #fff;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
+a {
+  color: #7f7f90 !important;
+  font-weight: bold;
+}
+
+.my-button {
+  background-color: #CE1212;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  transition: 0.2s;
+}
+.my-button:hover {
+  background-color: #d64c4c;
+}/*# sourceMappingURL=main.css.map */
